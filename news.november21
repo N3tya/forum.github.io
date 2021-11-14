@@ -1,0 +1,182 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+    :root {
+        --main-color: #b1d3c5
+    }
+
+    .news {
+        width: 500px;
+        margin: auto;
+        font-family: Cambria;
+        overflow: hidden
+    }
+
+    h2 {
+        margin: 0;
+        color: #595959;
+        background: #EDF3EF;
+        font-family: Dancing script, cursive;
+        text-align: center;
+        font-size: 25px
+    }
+
+    .news-content {
+        background: #EDF3EF;
+        color: #595959;
+        padding: 20px 20px;
+        font-size: 12px;
+        text-align: justify
+    }
+
+    .news-content h3 {
+        margin: 15px 0 0 5px;
+        font-size: 15px;
+        color: #d39286;
+        text-transform: uppercase;
+        font-weight: 800
+    }
+
+    .news-content h3:first-letter {
+        color: #86576C;
+        margin: 4px
+    }
+
+    .join {
+        margin: 20px 0 10px;
+        text-align: center
+    }
+
+    .join a {
+        text-decoration: none;
+        color: #86576C;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+    }
+
+    .join a:hover {
+        color: #d39286;
+        background-color: #86576C;
+        border: #d39286;
+        border-radius: 20px;
+        padding: 4px;
+    }
+
+    .footer-news {
+        background: var(--main-color);
+        padding: 20px 0
+    }
+
+    .news-team h5 {
+        margin: 0 0 20px;
+        color: #fff;
+        text-align: center;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 1px
+    }
+
+    .news-team-wrap {
+        display: flex;
+        justify-content: space-around
+    }
+
+    .news-team {
+        text-align: center;
+        width: 100px
+    }
+
+    .news-team img {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        border: 3px solid #d39286
+    }
+
+    .news-team h5 {
+        margin: 5px 0 0;
+        font-size: 12px;
+        color: #86576C
+    }
+
+    .news-team h5.role {
+        margin-bottom: 5px;
+        margin-top: 0;
+        font-weight: 600;
+        font-size: 10px
+    }
+
+    .news-credit {
+        text-align: center
+    }
+
+    .news-credit a {
+        text-decoration: none !important;
+        color: #ccc;
+        font-size: 9px;
+        letter-spacing: 1px
+    }
+
+    .news-credit xmp {
+        display: inline;
+        font-family: inherit
+    }
+</style>
+<div class="news">
+    <a target="_blank" href="https://lentrepasse.forumactif.com/">
+        <img alt="L'Entre-passe" src="https://zupimages.net/up/21/12/qouj.png" />
+    </a>
+    <h2>News du 14/11</h2>
+    <div class="news-content">
+        <h3>◆ Le forum fête son premier mois !</h3> Houra ! Nous ne sommes ouverts que depuis un petit mois et on a déjà
+        14 lanternes et 249 messages. D'ailleurs tu savais que notre membre-lanterne du mois est en fait... deux
+        lanternes ! Eh oui on a des nouveaux venus tellement chouettes qu'on a pas pu se décider alors... Bravo à
+        Asphodèle et Danielle !
+        Eh puis bon on va pas non plus se cacher mais notre Top-sitteur du mois n'est ni plus ni moins que Mirage notre
+        fondateur qui
+        explose des records de votes avec plus de 300 votes en une semaine ~
+
+        <h3>◆ T'es venu toi au défilé costumé ?</h3> C'est incroyable mais on a même pu lancer un évent d'Halloween pour
+        fêter l'arrivée de tant de nouvelles lanternes et l'ouverture des portes de l'Entre-passe. On peut dire qu'il a
+        eu du succès et que de nombreux rebondissements ont eu lieu. Entre un incendie impromptue, des animositées, un
+        défilé original et un feu d'artifice détonnant, ce premier évènement a été fabuleux !
+        <div class="join"><a target="_blank" href="https://lentrepasse.forumactif.com/f57-les-predefinis">× Des
+                prédéfinis vous attendent sur l'Entre-passe ! ×</a>
+        </div>
+    </div>
+    <div class="footer-news">
+        <div class="news-team-wrap">
+            <div class="news-team">
+                <h5 class="role">fonda</h5>
+                <img src="https://zupimages.net/up/21/12/673f.png">
+                <h5>Azalée</h5>
+            </div>
+            <div class="news-team">
+                <h5 class="role">fonda</h5>
+                <img src="https://zupimages.net/up/21/40/07tr.png">
+                <h5>Mirage</h5>
+            </div>
+            <div class="news-team">
+                <h5 class="role">Admin</h5>
+                <img src="https://zupimages.net/up/21/40/uarq.png">
+                <h5>Natsuo</h5>
+            </div>
+            <div class="news-team">
+                <h5 class="role">Admin</h5>
+                <img src="https://zupimages.net/up/21/41/cou6.png">
+                <h5>Mirette</h5>
+            </div>
+        </div>
+    </div>
+    <div class="news-credit">
+        <a href="http://terrible.forumactif.org/" target="_blank">
+            <xmp>
+                </>awful</xmp>
+        </a>
+    </div>
+</div>
