@@ -1,0 +1,179 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+    :root {
+        --main-color: #b1d3c5
+    }
+
+    .news {
+        width: 500px;
+        margin: auto;
+        font-family: Cambria;
+        overflow: hidden
+    }
+
+    h2 {
+        margin: 0;
+        color: #595959;
+        background: #EDF3EF;
+        font-family: Dancing script, cursive;
+        text-align: center;
+        font-size: 25px
+    }
+
+    .news-content {
+        background: #EDF3EF;
+        color: #595959;
+        padding: 20px 20px;
+        font-size: 12px;
+        text-align: justify
+    }
+
+    .news-content h3 {
+        margin: 15px 0 0 5px;
+        font-size: 15px;
+        color: #d39286;
+        text-transform: uppercase;
+        font-weight: 800
+    }
+
+    .news-content h3:first-letter {
+        color: #86576C;
+        margin: 4px
+    }
+
+    .join {
+        margin: 20px 0 10px;
+        text-align: center
+    }
+
+    .join a {
+        text-decoration: none;
+        color: #86576C;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+    }
+
+    .join a:hover {
+        color: #d39286;
+        background-color: #86576C;
+        border: #d39286;
+        border-radius: 20px;
+        padding: 4px;
+    }
+
+    .footer-news {
+        background: var(--main-color);
+        padding: 20px 0
+    }
+
+    .news-team h5 {
+        margin: 0 0 20px;
+        color: #fff;
+        text-align: center;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 1px
+    }
+
+    .news-team-wrap {
+        display: flex;
+        justify-content: space-around
+    }
+
+    .news-team {
+        text-align: center;
+        width: 100px
+    }
+
+    .news-team img {
+        /* border-radius: 50%; */
+        height: 50px;
+        width: 100px;
+        border: 3px solid #d39286
+    }
+
+    .news-team h5 {
+        margin: 5px 0 0;
+        font-size: 12px;
+        color: #86576C
+    }
+
+    .news-team h5.role {
+        margin-bottom: 5px;
+        margin-top: 0;
+        font-weight: 600;
+        font-size: 10px
+    }
+
+    .news-credit {
+        text-align: center
+    }
+
+    .news-credit a {
+        text-decoration: none !important;
+        color: #ccc;
+        font-size: 9px;
+        letter-spacing: 1px
+    }
+
+    .news-credit xmp {
+        display: inline;
+        font-family: inherit
+    }
+</style>
+<div class="news">
+    <a target="_blank" href="https://lentrepasse.forumactif.com/">
+        <img alt="L'Entre-passe" src="https://zupimages.net/up/21/12/qouj.png" />
+    </a>
+    <h2>News du 14/10/2022</h2>
+    <div class="news-content">
+        <h3>◆ Et à propos de nos lanternes ?</h3> Notre chouette communauté compte 29 lanternes et 3092 messages sur le forum.
+        La chaleur a définitivement laissé la place au vent frais qui fait voler les feuilles d'automne et les citrouilles
+        parent désormais le forum pour l'arrivée d'Halloween. Et ce mois-ci vous pourrez à nouveau admirer notre indétrônable
+        Danielle sur la place du membre du mois ainsi qu'Harmonie qui prend gracieusement place entant que fiche coup de cœur
+        ! Bravo et félicitations à eux-deux !
+
+        <h3>◆ Octobre ce mois primordial !</h3>Le sondage à propos de l'organisation de l'évent d'Halloween s'est terminé et 
+        au vu de la super motivation et des réponses adorables ainsi que l'investissement de tout le
+        monde nous allons organiser celui-ci qui mènera à de chouettes surprises et une évolution de l'intrigue ~ Suspens suspens...
+        
+        C'est octobre et surtout le 14, vous l'avez peut-être vu avec le super thème d'anniversaire dans la liste parmi les
+        autres thèmes mais nous fêtons les 1 ans du forum ! Youpi à nous et merci à vous d'être de supers partos ainsi qu'à notre
+        communauté d'être au rendez-vous pour rendre l'univers de l'Entre-passe super chouette et toujours vivant 
+        (enfin... vivant... dans un monde des morts... voilà voilà)
+        
+        <h3>◆ De petites nouveautés...</h3> Vous avez vu arriver le mois passé deux supers thèmes mais ce mois-ci deux nouveaux
+        s'y sont ajoutés, le spooky pour plus d'ambiance pour la fête des morts et des citrouilles ainsi que le thème
+        anniversaire ~ Profitez en lors de votre passage chez nous car ce sera des thèmes éphémères qui disparaîtront à la fin du mois !
+
+        <div class="join"><a target="_blank" href="https://lentrepasse.forumactif.com/f57-les-predefinis">× Des
+                prédéfinis vous attendent sur l'Entre-passe ! ×</a>
+        </div>
+    </div>
+    <div class="footer-news">
+        <div class="news-team-wrap">
+            <div class="news-team">
+                <h5 class="role">fondatrice</h5>
+                <img src="https://zupimages.net/up/22/11/nz6k.png">
+                <h5>Azalée</h5>
+            </div>
+            <div class="news-team">
+                <h5 class="role">fondateur</h5>
+                <img src="https://zupimages.net/up/22/23/0xwl.png">
+                <h5>Israfil</h5>
+            </div>
+        </div>
+    </div>
+    <div class="news-credit">
+        <a href="http://terrible.forumactif.org/" target="_blank">
+            <xmp>
+                </>awful</xmp>
+        </a>
+    </div>
+</div>
