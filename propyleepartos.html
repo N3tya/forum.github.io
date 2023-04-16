@@ -1,0 +1,334 @@
+<style>
+  .humility { --accent:#3e2928;}
+
+.humility {
+  width: 350px; 
+  height: 350px; 
+  margin: auto;
+  background: #fff; 
+  border: solid 1px #3e2928; 
+  padding: 15px;
+  overflow: hidden;
+ }
+ 
+.humility .tabs {
+  position: relative;
+  width: 350px;
+  height: 400px;
+}
+
+.humility .tab {float: left;}
+
+ .humility .name {
+   width: 338px!important; 
+   font-size: 18px!important;
+   letter-spacing: 2px!important; 
+   color: #fff!important;
+ }
+ 
+.humility .tab label {
+  position: relative; 
+  background: var(--accent);
+  font: bold 11px/10px roboto; 
+  padding: 10px 5px 7px 5px;
+  margin: .5px; 
+  display: inline-block;
+  width: 76px;
+  text-align: center; 
+  text-transform: uppercase;
+  color: #000;
+}
+
+.humility .tabs-radio {
+  background: #ddd3c0!important;  
+}
+
+.humility .tab [type=radio] {display: none;  }
+
+.humility .content {
+  position: absolute; 
+  transition: .8s; 
+  overflow: hidden;
+  top: 58px;
+  margin: 0 .5px; 
+  width: 347px; 
+  height: 290px;
+  bottom: 0px; 
+  left: 0px; 
+  right: 0px; 
+  transform: scale(.1,.1);
+  opacity: 0; 
+  background: #ddd3c0;
+}
+
+.humility [type=radio]:checked ~ label {
+  z-index: 2; 
+  filter: brightness(1.2);
+}
+
+.humility [type=radio]:checked ~ label ~ .content {
+  z-index: 1; 
+  opacity: 1; 
+  transform: scale(1,1);
+}
+
+.humility .pic {
+  width: 347px; 
+  height: 290px; 
+  background-size: cover!important;
+}
+ 
+ .humility .text {
+  font: 10px/17px roboto; 
+  text-align: justify;
+  margin: 25px; 
+  background: rgba(255,255,255,.7);
+  border: solid 1px #ddd;
+}
+ 
+.humility .text-1 {
+  font: 10px/17px roboto; text-align: justify;
+  margin: 25px;  background: rgba(255,255,255,.7);
+  border: solid 1px #ddd;
+}
+ 
+.humility .scroll {
+  height: 200px; 
+  margin: 20px; 
+  overflow: auto; 
+  padding-right: 10px;
+}
+ 
+.humility .text-1 .scroll {
+  height: 115px; 
+  margin: 20px; 
+  overflow: auto; 
+  padding-right: 10px;
+}
+ 
+.humility .scroll::-webkit-scrollbar {width: 5px;}
+.humility .scroll::-webkit-scrollbar-track {border: solid 1px #ddd;}
+ 
+.humility .scroll::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.5);
+  border: solid 1px var(--accent);
+}
+ 
+.humility .info {margin: 25px 25px -10px 25px;}
+ 
+.humility .info b {
+  border-bottom: solid 1px var(--accent);
+  display: block; 
+  font: bold 8px/8px roboto;
+  text-transform: uppercase; 
+  padding: 5px;
+  color: #444; 
+  letter-spacing: 1px;
+}
+
+.liens {
+  color: #3e2928;
+  display: block;
+  font: bold 10px/10px roboto;
+  padding: 4.4% 0;
+  margin-top: -11px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: all;
+  transition: .5s;
+  text-align: center;
+}
+
+.liens a {
+  border: #3e2928 solid 1px;
+  margin: 4px 10px;
+}
+
+.liens a:hover {
+  box-shadow: inset -17em 0 0 0 #3E2928, inset 17em 0 0 0 #3E2928;
+  color: #ddd3c0;
+}
+
+.predefs, .staff_container {
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.predefs img, .staff img {
+  border: #3e2928 solid 1px;
+  padding: 4px;
+}
+
+.staff img {
+  margin: 5px 0;
+}
+
+#autre {
+      margin-top: -16px!important;
+}
+
+.predefs img {
+  filter: gray;
+  -webkit-filter: grayscale(0.6);
+  -webkit-transition: all .5s ease-in-out;  
+}
+
+.predefs img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.staff_pa {
+  width: 100px;
+  height: 200px;
+  overflow: hidden;
+  display: inline-block;
+  border: #3e2928 solid 1px;
+  padding: 4px;
+  margin-top: 5px;
+}
+
+.staff_pa_img {
+  position: relative;
+  z-index: 2;
+  width: 100px;
+  height: 200px;
+  transform: all;
+  transition: 1s;
+}
+
+.staff_pa:hover .staff_pa_img {
+  margin-left: 400px;
+  transform: all;
+  transition: 1s;
+}
+
+.pseudo_staff {  
+  background: #8d9b9e;
+  position: relative;
+  z-index: 1;
+  width: 100px;
+  height: 164px;
+  margin-top: -200px;
+  text-align: center;
+  color: #3E2928;
+  padding: 18px 0;  
+  font: bold 15px/15px roboto;
+}
+
+.description_staff {
+  position: relative;
+  z-index: 1;
+  margin-top: -170px;
+  text-align: center;
+  color: #3E2928;
+  padding: 18px 0;  
+  font: 12px/12px roboto;
+}
+</style>
+
+<!-- Code désigné par Honeybear. Merci de créditer l'auteur ! Lien source : http://cttw.jcink.net/index.php?showtopic=21582 -->
+​
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="http://files.jcink.net/uploads/samson/cctm.css">
+
+<div class="humility">
+  <div class="tabs">
+    <div class="tab">
+      <input type="radio" id="tab-1" name="tab-group-1" checked>
+      <label for="tab-1" class="name">Propylée</label>
+      <div class="content">
+        <div class="pic" style="background:url(https://zupimages.net/up/23/15/ozii.png)"></div>
+      </div>
+    </div><br>
+    <div class="tab">
+      <input type="radio" id="tab-2" name="tab-group-1">
+      <label class="tabs-radio" for="tab-2">Contexte</label>
+      <div class="content">
+        <div class="info">
+          <b>Ambiance chill et accueillante</b>
+          <b>Forum tout public mais possibilité de rps violents</b>
+          <b>Pas de limite de mots</b>
+          <b>Avatars illustrés 200*320</b>
+        </div>
+        <div class="text-1">
+          <div class="scroll">
+            Le monde vous paraît terne ou la voie à laquelle vous aspirez pour être heureux vous paraît trop lointaine et impossible à suivre ? Une porte étrange s'est matérialisée devant vous et une fois ouverte elle ne dévoile absolument pas ce à quoi vous vous attendiez ? Félicitations vous avez été choisi par la magie de Propylée, rêveur ! Cette porte qui ne devait vous montrer qu'un simple placard à balais vous fait voir un monde entier et merveilleux auquel il vous est impossible de tourner le dos. Voici l'académie de Propylée et cela tombe parfaitement non ? Vous rêviez de devenir le prochain inventeur incroyable ou l'écrivain de génie qui élabore un nouveau genre ? Tout est possible et à votre portée dans ce monde. Propylée vous invite à suivre votre destinée tandis que sur Terre la vie avance et de nombreux visages marquent l'Histoire. Peut-être sont-ce ceux qui reviennent de cet autre plan magique pour concrétiser leurs apprentissages ? Et peut-être serez-vous le prochain ?
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" id="tab-3" name="tab-group-1">
+      <label class="tabs-radio" for="tab-3">Liens utiles</label>
+      <div class="content">
+        <div class="liens"><a href="https://propylee.forumactif.com/t7-le-reglement" target="blank" class="liens">Règlement</a>  
+        <a href="https://propylee.forumactif.com/t6-le-contexte-univers" target="blank" class="liens">Contexte & univers</a> 
+        <a href="https://propylee.forumactif.com/t5-les-groupes" target="blank" class="liens">Groupes</a>
+        <a href="https://propylee.forumactif.com/t3-la-magie-pouvoirs" target="blank" class="liens">Magie & pouvoirs</a>
+        <a href="https://propylee.forumactif.com/t4-les-etudes-et-metiers" target="blank" class="liens">Études & métiers</a>  
+        <a href="https://propylee.forumactif.com/t16-le-bottin-des-avatars" target="blank" class="liens">Bottin des avatars</a>
+        </div>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" id="tab-4" name="tab-group-1">
+      <label class="tabs-radio" for="tab-4">Prédéfinis</label>
+      <div class="content">
+        <div class="predefs">
+<a href="https://propylee.forumactif.com/t18-les-prosperes" target="blank"><img src="https://zupimages.net/up/23/13/0gim.png" alt="BRIAN MCMURPHY" /></a>
+<a href="https://propylee.forumactif.com/t19-les-eclatants" target="blank"><img src="https://zupimages.net/up/23/13/lzjk.png" alt="DAVID ROYER"/></a>
+<a href="https://propylee.forumactif.com/t20-les-prestes" target="blank"><img src="https://zupimages.net/up/23/13/ota2.png" alt="HANJA PARK"/></a><br/>
+<a href="https://propylee.forumactif.com/t21-les-voyageurs" target="blank"><img src="https://zupimages.net/up/23/13/pzr2.png" alt="ARTHUR DÉLÈZE"/></a>
+<a href="https://propylee.forumactif.com/t22-les-altruistes" target="blank"><img src="https://zupimages.net/up/23/13/fa35.png" alt="MAXINE ANDERSON"/></a>
+<a href="https://propylee.forumactif.com/t23-les-epanouis" target="blank"><img src="https://zupimages.net/up/23/13/owop.png" alt="AKEMI TANAKA"/></a>
+        </div>
+        <div class="liens" id="autre"><a href="https://propylee.forumactif.com/f9-les-predefinis" target="blank" class="liens">Les autres</a> 
+        </div>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" id="tab-5" name="tab-group-1">
+      <label class="tabs-radio" for="tab-5">Et nous ?</label>
+      <div class="content">
+        
+        <div class="staff_container">
+          <div class="staff_pa">
+            <div class="staff_pa_img">
+              <img src="https://zupimages.net/up/23/15/3w8k.png"/>
+            </div>
+            <div class="pseudo_staff">SRAJAN</div>
+            <div class="description_staff">
+              Fondateur de Propylée accro au thé et facilement corruptible avec des hiboux
+            </div>
+        </div>
+        
+        <div class="staff_pa">
+          <div class="staff_pa_img">
+            <img src="https://zupimages.net/up/23/15/ivz1.png"/>
+          </div>
+          <div class="pseudo_staff">MIA</div>
+            <div class="description_staff">
+              Co-fondatrice de Propylée accro au code et adoratrice des cookies
+            </div>          
+        </div>
+        
+        <div class="staff_pa">
+          <div class="staff_pa_img">
+            <img src="https://zupimages.net/up/23/15/std6.png"/>
+          </div>
+          <div class="pseudo_staff">GONTRAND</div>
+            <div class="description_staff">
+              La plus fabuleuse des mascottes existante sur Terre comme sur Propylée: Gontrand le saint canard qui est en fait une oie à quatre pattes !
+            </div>
+        </div>
+        </div>
+        <div class="liens" id="autre"><a href="https://propylee.forumactif.com/" target="blank" class="liens">Venir vouer un culte à Gontrand sur Propylée avec nous ?</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="mitzicredit" style="width:370px;"><a href="http://cttw.jcink.net/index.php?showuser=10464">FROM MITZI WITH LOVE</a></div>
